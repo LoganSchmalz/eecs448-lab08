@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Exercise 4</title>
+		<script>
+			function changestyle() {
+				console.log("test");
+				p = document.getElementById("change");
+				borderColor = document.getElementById("border").value;
+				borderWidth = document.getElementById("width").value;
+				bgColor = document.getElementById("background").value;
+
+				p.style.borderColor = borderColor;
+				p.style.borderWidth = borderWidth;
+				p.style.backgroundColor = bgColor;
+			}		
+		</script>
+	</head>
+	<body>
+		<p id="change" style="border-style:solid">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis tincidunt purus, eu efficitur felis condimentum at. Nam scelerisque auctor lectus, vel lacinia nisl fermentum nec. Praesent id porttitor sapien. Nunc semper non neque id blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Duis quis dolor dictum, elementum est ac, egestas odio.
+		<br>
+		Nulla fermentum tincidunt ex eget consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean purus mauris, pharetra eget pulvinar in, fringilla a magna. Suspendisse nec massa sagittis, laoreet massa in, blandit est. Integer ut finibus nulla. Maecenas imperdiet non velit at dignissim. Suspendisse potenti. Fusce tincidunt mauris lacinia lectus fermentum venenatis quis vitae quam. Sed non feugiat neque. Aliquam eget dui tristique urna dapibus eleifend nec sit amet diam.
+		<br>
+		Nam tempor nisi eu ornare efficitur. Quisque at eros magna. Fusce rhoncus erat tellus, eu viverra ante laoreet nec. Aliquam id blandit mi. Ut molestie tortor ut vehicula vulputate. Nulla a sagittis sem. Sed eu ex pellentesque, fermentum augue vel, blandit odio.
+		<br>
+		In hac habitasse platea dictumst. Nullam nisl felis, ullamcorper id imperdiet quis, lobortis ut elit. Morbi maximus nisl turpis, in dictum ipsum pellentesque nec. Donec justo risus, dictum in tempus at, suscipit in sem. Etiam est tellus, pulvinar vitae risus nec, varius consequat risus. Aenean nibh nibh, mattis ut faucibus a, egestas sit amet velit. Sed vulputate ipsum risus, ac vulputate eros ultrices vel. Vestibulum gravida ex posuere, porttitor velit at, consequat tellus. Donec at nibh ut erat aliquam maximus. In vel arcu eget ex convallis euismod. Maecenas efficitur et velit id viverra. Praesent ornare ac arcu et vulputate.
+		<br>
+		Ut at lectus pulvinar, laoreet est eget, ullamcorper ex. Praesent egestas convallis ipsum, sed sollicitudin ex volutpat a. Morbi imperdiet tincidunt massa eu euismod. Nulla facilisi. Phasellus tristique interdum eros. Morbi vitae nibh nec leo facilisis faucibus at congue massa. Vestibulum sit amet dapibus felis. Nunc vitae venenatis ante. Pellentesque porta magna et quam pulvinar viverra. Integer vulputate vehicula lacus eget iaculis. Phasellus condimentum lectus nec euismod convallis. Proin fermentum, nisl quis interdum aliquam, nisl nulla finibus orci, at viverra felis elit non tellus. 
+		</p>
+		<input type="color" id="border" name="border" value="#000000"><label for="border">Border</label><br>
+		<input type="number" id="width" name="width" value="3"><label for="width">Border Width</label><br>
+		<input type="color" id="background" name="background" value="#ffffff"><label for="background">Background</label><br>
+		<button onclick="changestyle()">Change Style</button>
+		<br>
+		<a href="index.html">Home</a>
+	</body>
+</html>

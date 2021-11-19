@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Exercise 2</title>
+		<script>
+			var currimg = 0;
+			var imgs = ["img1.png", "img2.png", "img3.png", "img4.png", "img5.png"];
+			function next() {
+				switch (currimg)
+				{
+					case imgs.length - 1: currimg = 0; break;
+					default: currimg = currimg + 1;
+				}
+				document.getElementById("slideshow").src = imgs[currimg]; 
+			}
+			function previous() {
+				switch (currimg)
+				{
+					case 0: currimg = imgs.length - 1; break;
+					default: currimg = currimg - 1;
+				}
+				document.getElementById("slideshow").src = imgs[currimg]; 
+			}
+			
+		</script>
+	</head>
+	<body>
+		<img src="img1.png" id="slideshow" width="320" height="200">
+		<br>
+		<button onclick="previous()">Previous</button>
+		<button onclick="next()">Next</button>
+		<a href="index.html">Home</a>
+	</body>
+</html>
